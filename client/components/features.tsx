@@ -1,7 +1,6 @@
 "use client";
 
 import { features } from "@/lib/types";
-import { FileSpreadsheet, Pencil, SquarePen } from "lucide-react";
 import * as motion from "motion/react-client";
 import { useRef } from "react";
 
