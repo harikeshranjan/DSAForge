@@ -1,4 +1,5 @@
 import { FileSpreadsheet, Home, Pencil, SquarePen } from "lucide-react";
+import { desc } from "motion/react-client";
 
 export const header = [
   {
@@ -31,3 +32,23 @@ export const header = [
   }
 ] as const;
 
+export const features = [
+  {
+    id: 1,
+    title: "Tutorial",
+    desc: "Dive deep into DSA with comprehensive tutorials tailored for every level of learner.",
+    icon: Pencil,
+  },
+  {
+    id: 2,
+    title: "Interview Questions",
+    desc: "Prepare for your next coding interview with real-world problem sets and solutions.",
+    icon: FileSpreadsheet,
+  },
+  {
+    id: 3,
+    title: "Practice Questions",
+    desc: "Sharpen your skills with a variety of practice questions across different topics.",
+    icon: SquarePen,
+  }
+] as const;
