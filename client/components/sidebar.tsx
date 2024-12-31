@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { tutorialSidebarDS, tutorialSidebarA } from "@/lib/types";
-import { Minus, MoveRight, PanelRightClose, X } from "lucide-react";
+import { Minus, MoveRight, PanelRightClose, PanelRightOpen } from "lucide-react";
 import Link from "next/link";
 
 export default function Sidebar() {
@@ -14,33 +14,20 @@ export default function Sidebar() {
 
   return (
     <>
-      {/* Open button, only visible on phone view when the sidebar is closed */}
-      {!isOpen && (
-        <div className="fixed top-20 left-2 z-10 md:hidden">
-          <button
-            type="button"
-            className="text-xl bg-gray-200 dark:bg-gray-900 p-2 rounded"
-            onClick={toggleSidebar}
-          >
-            <PanelRightClose />
-          </button>
-        </div>
-      )}
+      {/* Toggle button, visible on phone view */}
+      <div className="fixed top-3.5 left-2 z-[999] md:hidden">
+        <button
+          type="button"
+          className="text-xl p-2 rounded"
+          onClick={toggleSidebar}
+        >
+          {isOpen ? <PanelRightOpen size={24} /> : <PanelRightClose size={24} />}
+        </button>
+      </div>
 
       {/* Sidebar */}
-      <aside className={`fixed top-24 left-2 z-10 w-[95%] md:w-1/3 lg:w-1/4 xl:w-1/5 h-[80%] p-4 border rounded-lg shadow-md overflow-auto bg-white dark:bg-[#030712] ${isOpen ? "block" : "hidden"} md:block`}>
+      <aside className={`fixed top-20 left-2 z-10 w-[95%] md:w-1/3 lg:w-1/4 xl:w-1/5 h-[77%] p-4 border rounded-lg shadow-md overflow-auto bg-white dark:bg-[#030712] ${isOpen ? "block" : "hidden"} md:block`}>
         <h1 className="text-xl font-bold mb-4 text-center underline underline-offset-4">Contents</h1>
-
-        {/* Close button, only visible on phone view */}
-        <div className="absolute top-4 right-4 block md:hidden">
-          <button
-            type="button"
-            className="text-xl hover:bg-gray-200 hover:dark:bg-gray-800 p-1 rounded-full"
-            onClick={toggleSidebar}
-          >
-            <X className="font-bold" />
-          </button>
-        </div>
 
         <div>
           <h2 className="text-lg font-semibold mb-2">Data Structure</h2>
