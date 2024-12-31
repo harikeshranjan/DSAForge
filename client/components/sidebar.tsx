@@ -34,7 +34,7 @@ export default function Sidebar() {
           <ul className="space-y-2 dark:text-gray-300">
             {tutorialSidebarDS.map(topic => (
               <li key={topic.id} className="mb-2">
-                <Link href={`${topic.slug}`} className="flex gap-2 items-center hover:underline">
+                <Link href={`tutorial/${topic.slug}`} className="flex gap-2 items-center hover:underline">
                   <MoveRight size={12} />
                   {topic.heading}
                 </Link>
@@ -43,7 +43,7 @@ export default function Sidebar() {
                     {topic.subtopics.map(subtopic => (
                       <li key={subtopic.id}>
                         <Link
-                          href={`${topic.slug}/${subtopic.slug}`}
+                          href={`tutorial/${topic.slug}/${subtopic.slug}`}
                           className="flex gap-2 items-center hover:underline text-sm"
                         >
                           <Minus size={12} />
@@ -63,7 +63,7 @@ export default function Sidebar() {
           <ul className="space-y-2 dark:text-gray-300">
             {tutorialSidebarA.map(topic => (
               <li key={topic.id} className="mb-2">
-                <Link href={`${topic.slug}`} className="flex gap-2 items-center hover:underline">
+                <Link href={`tutorial/${topic.slug}`} className="flex gap-2 items-center hover:underline">
                   <MoveRight size={12} />
                   {topic.heading}
                 </Link>
@@ -72,7 +72,7 @@ export default function Sidebar() {
                     {topic.subtopics.map(subtopic => (
                       <li key={subtopic.id}>
                         <Link
-                          href={`${topic.slug}/${subtopic.slug}`}
+                          href={`tutorial/${topic.slug}/${subtopic.slug}`}
                           className="flex gap-2 items-center hover:underline text-sm"
                         >
                           <Minus size={12} />

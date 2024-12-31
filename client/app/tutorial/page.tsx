@@ -65,13 +65,13 @@ export default function Tutorial() {
       </p>
 
       {/* Important Data Structures Container */}
-      <div className="py-4 rounded shadow-md mb-8">
+      <div className="py-4 mb-8">
         <h2 className="text-xl font-semibold mb-4">Easy but important Data Structures</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {dataStructures.map((ds, index) => (
             <motion.div
               key={index}
-              className="bg-white dark:bg-gray-900 py-3.5 px-5 rounded shadow hover:shadow-lg hover:scale-105 transition-all duration-75 cursor-pointer group"
+              className="bg-gray-100 dark:bg-gray-900 py-3.5 px-5 rounded shadow hover:shadow-lg hover:scale-105 transition-all duration-75 cursor-pointer group"
               initial='initial'
               animate='animate'
               viewport={{ once: true }}
@@ -82,7 +82,7 @@ export default function Tutorial() {
                 <Link href={ds.link}><h3 className="text-lg font-bold mb-2">{ds.name}</h3></Link>
                 <MoveRight className="group-hover:translate-x-1 transition-all duration-150" />
               </div>
-              <p className="text-sm mb-4 text-gray-300">{ds.description}</p>
+              <p className="text-sm mb-4 text-gray-800 dark:text-gray-300">{ds.description}</p>
             </motion.div>
           ))}
         </div>

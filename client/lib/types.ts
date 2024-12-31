@@ -246,3 +246,85 @@ export const tutorialSidebarA = [
   },
 ] as const;
 
+export const interviewQuestionsSidebar = [
+  {
+    id: 'basics',
+    title: 'Basics',
+    slug: '/basics',
+  },
+  {
+    id: 'arrays',
+    title: 'Arrays',
+    slug: '/arrays',
+  },
+  {
+    id: 'strings',
+    title: 'Strings',
+    slug: '/strings',
+  },
+  {
+    id: 'linked-lists',
+    title: 'Linked Lists',
+    slug: '/linked-lists',
+  },
+  {
+    id: 'stacks',
+    title: 'Stacks',
+    slug: '/stacks',
+  },
+  {
+    id: 'queues',
+    title: 'Queues',
+    slug: '/queues',
+  },
+  {
+    id: 'trees',
+    title: 'Trees',
+    slug: '/trees',
+  },
+  {
+    id: 'graphs',
+    title: 'Graphs',
+    slug: '/graphs',
+  },
+  {
+    id: 'sorting',
+    title: 'Sorting',
+    slug: '/sorting',
+  },
+  {
+    id: 'searching',
+    title: 'Searching',
+    slug: '/searching',
+  },
+  {
+    id: 'dynamic-programming',
+    title: 'Dynamic Programming',
+    slug: '/dynamic-programming',
+  },
+  {
+    id: 'greedy-algorithms',
+    title: 'Greedy Algorithms',
+    slug: '/greedy-algorithms',
+  },
+  {
+    id: 'bit-manipulation',
+    title: 'Bit Manipulation',
+    slug: '/bit-manipulation',
+  },
+  {
+    id: 'recursion',
+    title: 'Recursion',
+    slug: '/recursion',
+  },
+  {
+    id: 'backtracking',
+    title: 'Backtracking',
+    slug: '/backtracking',
+  },
+  {
+    id: 'object-oriented-programming',
+    title: 'Object Oriented Programming',
+    slug: '/object-oriented-programming',
+  }
+] as const;
