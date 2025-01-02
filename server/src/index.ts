@@ -18,6 +18,12 @@ app.use(cors({
   credentials: true
 }));
 
+mongoose.connect(process.env.MONGO_URI as string).then(() => {
+  console.log("MongoDB Connected");
+}).catch((error) => {
+  console.log(error);
+})
+
 app.use('/tutorial', tutorialRouter);
 app.use('/interview-questions', interviewQuestionsRouter);
 
