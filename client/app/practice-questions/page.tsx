@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card } from '@/components/ui/card';
 import { practiceQuestionsA, practiceQuestionsDS } from '@/lib/practiceQuestionsData';
+import HashTags from '@/components/hash-tags';
 
 export default function PracticeQuestions() {
   const getDifficultyColor = (difficulty: string) => {
@@ -28,6 +29,8 @@ export default function PracticeQuestions() {
           Perfect for technical interviews and competitive programming preparation.
         </p>
       </div>
+
+      <HashTags />
 
       <h2 className='mt-10 mb-5 text-center font-bold text-xl md:text-2xl'>Data Structures</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
