@@ -12,31 +12,30 @@ import {
 } from "@/components/ui/sidebar"
 import { ModeToggle } from "./theme-toggle"
 
-// Menu items.
 const items = [
   {
     title: "Home",
-    url: "#",
+    url: "/",
     icon: Home,
   },
   {
     title: "Add Tutorials",
-    url: "#",
+    url: "/add-tutorial",
     icon: Pen,
   },
   {
     title: "View Tutorials",
-    url: "#",
+    url: "/view-tutorial",
     icon: Glasses,
   },
   {
     title: "Add Interview Questions",
-    url: "#",
+    url: "/add-interview-questions",
     icon: Pencil,
   },
   {
     title: "View Interview Questions",
-    url: "#",
+    url: "/view-interview-questions",
     icon: Eye,
   },
 ]

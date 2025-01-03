@@ -25,9 +25,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Features Grid */}
       <div className="grid md:grid-cols-2 gap-6">
-        {/* Add Tutorials Card */}
         <div className="group bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border border-gray-100 dark:border-gray-700 hover:shadow-lg transition-all cursor-pointer">
           <div className="flex items-center justify-between mb-4">
             <BookPlus className="h-8 w-8 text-blue-500 dark:text-blue-400" />
@@ -44,7 +42,6 @@ export default function Home() {
           </p>
         </div>
 
-        {/* View Tutorials Card */}
         <div className="group bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border border-gray-100 dark:border-gray-700 hover:shadow-lg transition-all cursor-pointer">
           <div className="flex items-center justify-between mb-4">
             <Book className="h-8 w-8 text-green-500 dark:text-green-400" />
@@ -61,7 +58,6 @@ export default function Home() {
           </p>
         </div>
 
-        {/* Add Interview Questions Card */}
         <div className="group bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border border-gray-100 dark:border-gray-700 hover:shadow-lg transition-all cursor-pointer">
           <div className="flex items-center justify-between mb-4">
             <PlusCircle className="h-8 w-8 text-purple-500 dark:text-purple-400" />
@@ -78,7 +74,6 @@ export default function Home() {
           </p>
         </div>
 
-        {/* View Interview Questions Card */}
         <div className="group bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border border-gray-100 dark:border-gray-700 hover:shadow-lg transition-all cursor-pointer">
           <div className="flex items-center justify-between mb-4">
             <List className="h-8 w-8 text-orange-500 dark:text-orange-400" />
