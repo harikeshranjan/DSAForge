@@ -1,4 +1,4 @@
-import { BookPlus, Book, PlusCircle, List, Search, ArrowRight } from "lucide-react";
+import { BookPlus, Book, PlusCircle, List, ArrowRight, BarChart2 } from "lucide-react";
 
 export default function Home() {
   return (
@@ -11,18 +11,6 @@ export default function Home() {
         <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
           Create and manage your educational content and interview questions in one centralized platform.
         </p>
-
-        {/* Quick Search Bar */}
-        <div className="mt-8 max-w-xl mx-auto">
-          <div className="flex items-center gap-2 p-2 rounded-lg bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
-            <Search className="h-5 w-5 text-gray-400" />
-            <input
-              type="text"
-              placeholder="Search tutorials or questions..."
-              className="flex-1 bg-transparent border-0 focus:outline-none text-gray-900 dark:text-gray-100"
-            />
-          </div>
-        </div>
       </div>
 
       <div className="grid md:grid-cols-2 gap-6">
@@ -89,7 +77,24 @@ export default function Home() {
             Access and manage your repository of interview questions and their solutions
           </p>
         </div>
+
+        <div className="group bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border border-gray-100 dark:border-gray-700 hover:shadow-lg transition-all cursor-pointer">
+          <div className="flex items-center justify-between mb-4">
+            <BarChart2 className="h-8 w-8 text-red-500 dark:text-red-400" />
+            <span className="text-sm font-medium text-red-500 dark:text-red-400 bg-red-50 dark:bg-red-900/50 px-2 py-1 rounded">
+              Analytics
+            </span>
+          </div>
+          <h2 className="text-xl font-semibold text-gray-900 dark:text-gray-50 mb-2 flex items-center gap-2">
+            View Analytics
+            <ArrowRight className="h-4 w-4 opacity-0 group-hover:opacity-100 transition-opacity" />
+          </h2>
+          <p className="text-gray-600 dark:text-gray-300">
+            Track the performance of tutorials and interview questions with usage statistics and insights
+          </p>
+        </div>
       </div>
     </section>
   );
 }
+

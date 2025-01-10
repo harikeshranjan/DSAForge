@@ -24,8 +24,8 @@ const items = [
     icon: Pen,
   },
   {
-    title: "View Tutorials",
-    url: "/view-tutorial",
+    title: "Manage Tutorials",
+    url: "/manage-tutorials",
     icon: Glasses,
   },
   {
